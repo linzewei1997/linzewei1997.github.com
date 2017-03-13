@@ -1,0 +1,17 @@
+baseurl: /home
+markdown: kramdown
+highlighter: pygments
+permalink: blog/:year/:month/:day/:title.html
+paginate: 5
+paginate_path: page/:num
+blog:
+    name: Corner                                         # 博客名称
+    description: 泽伟哥哥的博客                         # 博客描述
+    title: Corner                                        # 网页标题
+    url: https://linzewei1997.github.io                    # 博客地址
+author:
+    name: Corner                                    # 作者名称
+    email: 1442273814@qq.com                             # 邮箱地址
+    weibo: http://weibo.com/5935450709                   # 微博地址
+    github: https://github.com/linzewei1997               # GitHub地址
+    qq: 1442273814
