@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="{{ site.blog.title }}">
+    <meta name="author" content="{{ site.author.name }}">
+    {% if page.index == true %}
+    <meta name="keywords" content="{{ site.blog.title }}, {{ site.blog.name }}, {{ site.blog.description }}, {{ site.author.name }}">
+    <title>{{ site.blog.title }}</title>
+    <link rel="canonical" href="{{ site.blog.url }}">
+    {% else %}
+    <meta name="keywords" content="{{ page.title }}, {{ site.blog.name }}, {{ site.author.name }}">
+    <title>{{ page.title }} - {{ site.blog.name }}</title>
+    <link rel="canonical" href="{{ site.blog.url }}{{ page.url }}">
+    {% endif %}
+    <link rel="canonical" href="https://linzewei1997.github.io/home/">
+    <link rel="icon" href="{{ site.baseurl }}/asset/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/asset/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ site.baseurl }}/asset/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/asset/css/font-awesome.min.css">
+</head>
