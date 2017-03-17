@@ -15,3 +15,7 @@ author:
     weibo: http://weibo.com/5935450709                   # 微博地址
     github: https://github.com/linzewei1997               # GitHub地址
     qq: 1442273814
+deploy:
+  type: git
+  repository: https://github.com/linzewei1997/linzewei1997.github.com.git
+  branch: master

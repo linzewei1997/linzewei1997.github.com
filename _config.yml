@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-caymandeploy
+deploy:
+  type: git
+  repository: https://github.com/linzewei1997/linzewei1997.github.com.git
+  branch: master
