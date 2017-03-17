@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: 
 # markdown: kramdown
 # highlighter: pygments
 # permalink: blog/:year/:month/:day/:title.html
