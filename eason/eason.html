@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>陈奕迅粉丝庆生活动会</title>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+                dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                dpr = 1,
+                scale = 1 / dpr,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var metaEl = doc.createElement('meta');
+            metaEl.name = 'viewport';
+            metaEl.content = 'initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale;
+            docEl.firstElementChild.appendChild(metaEl);
+            var recalc = function() {
+                var width = docEl.clientWidth;
+                if (width / dpr > 750) {
+                    width = 750 * dpr;
+                }
+                // 乘以100，px : rem = 100 : 1
+                docEl.style.fontSize = 100 * (width / 750) + 'px';
+            };
+            recalc()
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+        window.onload = function () {
+            // 解决ios a:active失效问题
+            document.body.addEventListener('touchstart', function () {});
+        }
+    </script>
+    <style>
+        body{
+            padding:0 0.2rem;
+            max-width: 7.5rem;
+            margin:0 auto;
+        }
+        h1{
+            font-size: 0.28rem;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+        .txt{
+            font-size: 0.14rem;
+        }
+        .active-07-06 .img_list img{
+            width: 100%;
+            height: 100%;
+        }
+        .active-07-06 .button_list{
+            width: 6.7rem;
+            margin:0 auto;
+            font-size: 0.36rem;
+        }
+        .all_button.red{
+            width: 100%;
+            height: 1.2rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            border:0.01rem solid #FF645E;
+            border-radius: 1rem;
+        }
+        .all_button.red a{
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 1rem;
+            background: #FF645E;
+            color: #74452C;
+            width: 6.5rem;
+            height: 1rem;
+            margin-top: 0.1rem;
+            line-height: 1rem;
+            font-weight: bold;
+        }
+        .all_button.yellow{
+            width: 100%;
+            height: 1.2rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            border:0.01rem solid #FDE159;
+            border-radius: 1rem;
+        }
+        .all_button.yellow a{
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 1rem;
+            background: #FDE159;
+            color: #74452C;
+            width: 6.5rem;
+            height: 1rem;
+            margin-top: 0.1rem;
+            line-height: 1rem;
+            font-weight: bold;
+        }
+        .all_button.yellow a:active {
+            color: #FFF3BC;
+            -webkit-tap-highlight-color: transparent;  
+        }
+        .all_button.red a:active {
+            color: #FFA09C;
+            -webkit-tap-highlight-color: transparent;  
+        }
+        .active-07-06 .footer{
+            font-size: 0.24rem;
+            color: #999;
+            margin-top: 1.2rem;
+            margin-bottom: 0.2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="active-07-06">
+    <!-- <h1>2018年<7.27陈奕迅粉丝庆生活动会>策划方案</h1> -->
+    <div class="img_list">
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="3.jpg" alt="">
+        <img src="4.jpg" alt="">
+        <img src="5.jpg" alt="">
+        <img src="6.jpg" alt="">
+    </div>
+    <!-- <div class="footer">- 活动解释权归所有 -</div> -->
+</body>
+</html>
